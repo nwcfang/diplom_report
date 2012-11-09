@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libtio: Исходный файл src/include/tiooutput.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Создано системой Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Структуры&nbsp;данных</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&nbsp;членов&nbsp;всех&nbsp;файлов</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>src/include/tiooutput.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="../../d7/db2/tiooutput_8h.html">См. документацию.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef _TIO_OUTPUT_H</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define _TIO_OUTPUT_H</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 
+<a name="l00022"></a><a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46">00022</a> <span class="keyword">enum</span> <a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46">msgtype</a> {
+<a name="l00023"></a><a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a2fd6f336d08340583bd620a7f5694c90">00023</a>     ERROR,                      
+<a name="l00024"></a><a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a0593585da9181e972974c1274d8f2b4f">00024</a>     DEBUG,                      
+<a name="l00025"></a><a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a984de77c680eaff141ec910e25568a81">00025</a>     WARNING,                    
+<a name="l00026"></a><a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46ab3e6d7e18839259526a01001f558200f">00026</a>     <a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46ab3e6d7e18839259526a01001f558200f">MESSAGE</a>                     
+<a name="l00027"></a>00027 }; 
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 
+<a name="l00039"></a>00039 <span class="keywordtype">int</span> <a class="code" href="../../d7/db2/tiooutput_8h_a17ecf01acd77a051b215f9a3b97fb356.html#a17ecf01acd77a051b215f9a3b97fb356">parseFormat</a>( <span class="keywordtype">char</span>* res, <span class="keyword">const</span> <span class="keywordtype">char</span>* formStr, <span class="keyword">const</span> va_list* list );
+<a name="l00040"></a>00040 
+<a name="l00053"></a>00053 <span class="keywordtype">int</span> <a class="code" href="../../d7/db2/tiooutput_8h_aaad619ef0be240d319a2e266b22e4f12.html#aaad619ef0be240d319a2e266b22e4f12">numOccur</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* formStr, <span class="keywordtype">size_t</span> length );
+<a name="l00054"></a>00054 
+<a name="l00065"></a>00065 <span class="keywordtype">int</span> <a class="code" href="../../d7/db2/tiooutput_8h_aff6631ab4609539c888bd8e5cb2e1847.html#aff6631ab4609539c888bd8e5cb2e1847">catAndGo</a>( <span class="keywordtype">char</span>* curStr, <span class="keywordtype">char</span>* buf, <span class="keywordtype">int</span>* itr );
+<a name="l00066"></a>00066 
+<a name="l00084"></a>00084 <span class="keywordtype">int</span> <a class="code" href="../../d7/db2/tiooutput_8h_aa2382d43ccec0ea0d433216d38ec850a.html#aa2382d43ccec0ea0d433216d38ec850a" title="Функция строчного вывода для всех типов сообщений.">uniformstroutput</a>(<span class="keyword">enum</span> <a class="code" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46">msgtype</a> type, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, va_list args);
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 <span class="preprocessor">#endif //_TIOOUTPUT_H</span>
+</pre></div></div>
+</div>
+<hr class="footer"/><address class="footer"><small>Документация по libtio. Последние изменения: Mon Oct 1 2012 14:21:13. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

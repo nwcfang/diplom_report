@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libtio: Файл src/errorout.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Создано системой Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Структуры&nbsp;данных</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&nbsp;членов&nbsp;всех&nbsp;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<h1>Файл src/errorout.c</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Реализация базовых функций вывода сообщений об ошибках.  
+<a href="#_details">Подробнее...</a></p>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;stdarg.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../d5/d48/tio_8h_source.html">tio.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../d7/dc8/tioerror_8h_source.html">tioerror.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../db/d6b/tiowerror_8h_source.html">tiowerror.h</a>&gt;</code><br/>
+<code>#include &lt;config.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../d7/db2/tiooutput_8h_source.html">tiooutput.h</a>&gt;</code><br/>
+<div class="dynheader">
+Граф включаемых заголовочных файлов для errorout.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d34/errorout_8c__incl.png" border="0" usemap="#src_2errorout_8c" alt=""/></div>
+<map name="src_2errorout_8c" id="src_2errorout_8c">
+<area shape="rect" id="node11" href="../../d5/d48/tio_8h.html" title="Основной заголовочный файл для работы с библиотекой тестовго ввода&#45;вывода." alt="" coords="323,86,368,117"/><area shape="rect" id="node18" href="../../d7/dc8/tioerror_8h.html" title="Файл содержит константы кодов ошибок и функции для работы с ошибками." alt="" coords="421,166,493,197"/><area shape="rect" id="node23" href="../../db/d6b/tiowerror_8h.html" title="tiowerror.h" alt="" coords="443,86,525,117"/><area shape="rect" id="node25" href="../../db/d16/config_8h_source.html" title="config.h" alt="" coords="549,86,616,117"/><area shape="rect" id="node27" href="../../d7/db2/tiooutput_8h.html" title="Файл содержит вспомогательные функции для форматирования и вывода информации." alt="" coords="640,86,723,117"/><area shape="rect" id="node20" href="../../de/dfe/tioexit_8h.html" title="Заголовочный файл для функций завершения работы приложения." alt="" coords="331,166,397,197"/></map>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbb/errorout_8c_a29130a8f0f0107da5e3706f4378e89a0.html#a29130a8f0f0107da5e3706f4378e89a0">tioDie</a> (int status, const char *msg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Аварийное завершение приложения с возвращением кода ошибки.  <a href="#a29130a8f0f0107da5e3706f4378e89a0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbb/errorout_8c_aa3174bbb56128bde7f87d5adcda849e8.html#aa3174bbb56128bde7f87d5adcda849e8">tioError</a> (const char *content)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbb/errorout_8c_ab87936283f00815a36a7bbafabe2a84a.html#ab87936283f00815a36a7bbafabe2a84a">tioErrorF</a> (const char *format,...)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Реализация базовых функций вывода сообщений об ошибках. </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>Egorov N.V. &lt;<a href="mailto:egorov@rti-mints.ru">egorov@rti-mints.ru</a>&gt; </dd></dl>
+<dl class="date"><dt><b>Дата:</b></dt><dd>Mon Aug 30 14:42:46 2010 </dd></dl>
+</div>
+<hr class="footer"/><address class="footer"><small>Документация по libtio. Последние изменения: Mon Oct 1 2012 14:21:13. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

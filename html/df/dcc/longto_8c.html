@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libtio: Файл src/longto.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Создано системой Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Структуры&nbsp;данных</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&nbsp;членов&nbsp;всех&nbsp;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<h1>Файл src/longto.c</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Файл реализации функции преобразования целого числа в строку.  
+<a href="#_details">Подробнее...</a></p>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../d5/d48/tio_8h_source.html">tio.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../d7/dc8/tioerror_8h_source.html">tioerror.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="../../db/d6b/tiowerror_8h_source.html">tiowerror.h</a>&gt;</code><br/>
+<div class="dynheader">
+Граф включаемых заголовочных файлов для longto.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d43/longto_8c__incl.png" border="0" usemap="#src_2longto_8c" alt=""/></div>
+<map name="src_2longto_8c" id="src_2longto_8c">
+<area shape="rect" id="node9" href="../../d5/d48/tio_8h.html" title="Основной заголовочный файл для работы с библиотекой тестовго ввода&#45;вывода." alt="" coords="227,86,272,117"/><area shape="rect" id="node16" href="../../d7/dc8/tioerror_8h.html" title="Файл содержит константы кодов ошибок и функции для работы с ошибками." alt="" coords="393,166,465,197"/><area shape="rect" id="node21" href="../../db/d6b/tiowerror_8h.html" title="tiowerror.h" alt="" coords="347,86,429,117"/><area shape="rect" id="node18" href="../../de/dfe/tioexit_8h.html" title="Заголовочный файл для функций завершения работы приложения." alt="" coords="303,166,369,197"/></map>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/longto_8c_a563ad717417c95059b56e93aaabdeb59.html#a563ad717417c95059b56e93aaabdeb59">longtodec</a> (long obj, char *out, size_t bl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/longto_8c_ab03ba47164021ba33fd5a04d8055f2ad.html#ab03ba47164021ba33fd5a04d8055f2ad">longtoHEX</a> (long obj, char *out, size_t bl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/longto_8c_a10d93ec8dfe04dbbdd7dfa85d5cf55c0.html#a10d93ec8dfe04dbbdd7dfa85d5cf55c0">longtohex</a> (long obj, char *out, size_t bl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/longto_8c_acd0fcb5e8b518cef294e664bcaa137d6.html#acd0fcb5e8b518cef294e664bcaa137d6">longtooct</a> (long obj, char *out, size_t bl)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Файл реализации функции преобразования целого числа в строку. </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>Egorov N.V. &lt;<a href="mailto:egorov@rti-mints.ru">egorov@rti-mints.ru</a>&gt; </dd></dl>
+<dl class="date"><dt><b>Дата:</b></dt><dd>Thu Aug 19 15:33:34 2010 </dd></dl>
+</div>
+<hr class="footer"/><address class="footer"><small>Документация по libtio. Последние изменения: Mon Oct 1 2012 14:21:13. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

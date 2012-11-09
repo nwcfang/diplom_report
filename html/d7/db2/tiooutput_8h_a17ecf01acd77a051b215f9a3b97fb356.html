@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libtio: parseFormat</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Создано системой Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Структуры&nbsp;данных</span></a></li>
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div>
+  <div class="navpath">
+    <ul>
+      <li><a class="el" href="../../d7/db2/tiooutput_8h.html">tiooutput.h</a>      </li>
+    </ul>
+  </div>
+<div class="contents">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_aff6631ab4609539c888bd8e5cb2e1847.html#aff6631ab4609539c888bd8e5cb2e1847">catAndGo</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a0593585da9181e972974c1274d8f2b4f">DEBUG</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a2fd6f336d08340583bd620a7f5694c90">ERROR</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46ab3e6d7e18839259526a01001f558200f">MESSAGE</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46">msgtype</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_aaad619ef0be240d319a2e266b22e4f12.html#aaad619ef0be240d319a2e266b22e4f12">numOccur</a></td></tr>
+          <tr><td class="navtab"><a class="qindexHL" href="../../d7/db2/tiooutput_8h_a17ecf01acd77a051b215f9a3b97fb356.html#a17ecf01acd77a051b215f9a3b97fb356">parseFormat</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_aa2382d43ccec0ea0d433216d38ec850a.html#aa2382d43ccec0ea0d433216d38ec850a">uniformstroutput</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a984de77c680eaff141ec910e25568a81">WARNING</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top">
+<a class="anchor" id="a17ecf01acd77a051b215f9a3b97fb356"></a><!-- doxytag: member="tiooutput.h::parseFormat" ref="a17ecf01acd77a051b215f9a3b97fb356" args="(char *res, const char *formStr, const va_list *list)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parseFormat </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>formStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const va_list *&nbsp;</td>
+          <td class="paramname"> <em>list</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Выявление вхождений параметров в строку.</p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>formStr</em>&nbsp;</td><td>Указатель на первый эллемент строки. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>list</em>&nbsp;</td><td>Указатель на список входящих параметров. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>res</em>&nbsp;</td><td>Указатель на выделенную память под результат.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>0 при удачном завершении и номер ошибки в противном случае. </dd></dl>
+
+<p>Перекрестные ссылки <a class="el" href="../../d7/db2/tiooutput_8h_aff6631ab4609539c888bd8e5cb2e1847.html#aff6631ab4609539c888bd8e5cb2e1847">catAndGo()</a>.</p>
+
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div>
+<hr class="footer"/><address class="footer"><small>Документация по libtio. Последние изменения: Mon Oct 1 2012 14:21:13. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

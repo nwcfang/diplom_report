@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libtio: Файл src/include/tiooutput.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Создано системой Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Структуры&nbsp;данных</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&nbsp;членов&nbsp;всех&nbsp;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<h1>Файл src/include/tiooutput.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Файл содержит вспомогательные функции для форматирования и вывода информации.  
+<a href="#_details">Подробнее...</a></p>
+
+<p><a href="../../d7/db2/tiooutput_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46">msgtype</a> { <a class="el" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a2fd6f336d08340583bd620a7f5694c90">ERROR</a>, 
+<a class="el" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a0593585da9181e972974c1274d8f2b4f">DEBUG</a>, 
+<a class="el" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46a984de77c680eaff141ec910e25568a81">WARNING</a>, 
+<a class="el" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46ab3e6d7e18839259526a01001f558200f">MESSAGE</a>
+ }</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db2/tiooutput_8h_aff6631ab4609539c888bd8e5cb2e1847.html#aff6631ab4609539c888bd8e5cb2e1847">catAndGo</a> (char *curStr, char *buf, int *itr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db2/tiooutput_8h_aaad619ef0be240d319a2e266b22e4f12.html#aaad619ef0be240d319a2e266b22e4f12">numOccur</a> (const char *formStr, size_t length)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db2/tiooutput_8h_a17ecf01acd77a051b215f9a3b97fb356.html#a17ecf01acd77a051b215f9a3b97fb356">parseFormat</a> (char *res, const char *formStr, const va_list *list)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db2/tiooutput_8h_aa2382d43ccec0ea0d433216d38ec850a.html#aa2382d43ccec0ea0d433216d38ec850a">uniformstroutput</a> (enum <a class="el" href="../../d7/db2/tiooutput_8h_a5a6e7c04f80925659a8e65dc688caa46.html#a5a6e7c04f80925659a8e65dc688caa46">msgtype</a> type, const char *format, va_list args)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Функция строчного вывода для всех типов сообщений.  <a href="#aa2382d43ccec0ea0d433216d38ec850a"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Файл содержит вспомогательные функции для форматирования и вывода информации. </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>Egorov N.V. &lt;<a href="mailto:egorov@rti-mints.ru">egorov@rti-mints.ru</a>&gt; </dd></dl>
+<dl class="date"><dt><b>Дата:</b></dt><dd>Wed Aug 11 15:12:43 2010 </dd></dl>
+</div>
+<hr class="footer"/><address class="footer"><small>Документация по libtio. Последние изменения: Mon Oct 1 2012 14:21:13. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

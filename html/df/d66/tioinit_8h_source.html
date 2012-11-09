@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>libtio: Исходный файл src/include/tioinit.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Создано системой Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Титульная&nbsp;страница</span></a></li>
+      <li><a href="../../pages.html"><span>Описания</span></a></li>
+      <li><a href="../../annotated.html"><span>Структуры&nbsp;данных</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Файлы</span></a></li>
+      <li><a href="../../globals.html"><span>Список&nbsp;членов&nbsp;всех&nbsp;файлов</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>src/include/tioinit.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="../../df/d66/tioinit_8h.html">См. документацию.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Copyright (C) 2010 by РТИ им. Минтса */</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;<a class="code" href="../../d5/d48/tio_8h.html" title="Основной заголовочный файл для работы с библиотекой тестовго ввода-вывода.">tio.h</a>&gt;</span>
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="preprocessor">#ifndef _TIOINIT_H</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">#define _TIOINIT_H</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 
+<a name="l00022"></a><a class="code" href="../../d1/d25/structtio__param__rec.html">00022</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>_tio_param_rec
+<a name="l00023"></a>00023 {
+<a name="l00024"></a><a class="code" href="../../d1/d25/structtio__param__rec_a560f1467e3f46bfd431d38644a47dc82.html#a560f1467e3f46bfd431d38644a47dc82">00024</a>   <span class="keywordtype">char</span> *name;                   
+<a name="l00025"></a><a class="code" href="../../d1/d25/structtio__param__rec_a40020c7e82eb39477d0e63bac3d707d2.html#a40020c7e82eb39477d0e63bac3d707d2">00025</a>   <span class="keywordtype">char</span> **keys;                  
+<a name="l00026"></a><a class="code" href="../../d1/d25/structtio__param__rec_acc60f9d0ebb7ee43a4dce221a788e00f.html#acc60f9d0ebb7ee43a4dce221a788e00f">00026</a>   <span class="keywordtype">char</span> *skeys;                  
+<a name="l00027"></a><a class="code" href="../../d1/d25/structtio__param__rec_a909c8dba61b6ceea0780158b5cc9bf5e.html#a909c8dba61b6ceea0780158b5cc9bf5e">00027</a>   <span class="keywordtype">char</span> *description;            
+<a name="l00028"></a><a class="code" href="../../d1/d25/structtio__param__rec_a6dfef78198be808f15fe10145c89dc7d.html#a6dfef78198be808f15fe10145c89dc7d">00028</a>   <span class="keywordtype">char</span> *val;                    
+<a name="l00030"></a><a class="code" href="../../d1/d25/structtio__param__rec_a053488626ae008017d531a0f1d260fdf.html#a053488626ae008017d531a0f1d260fdf">00030</a>   <span class="keywordtype">int</span> has_key;                  
+<a name="l00031"></a>00031 } <a class="code" href="../../d1/d25/structtio__param__rec.html">tio_param_rec</a>;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 
+<a name="l00035"></a>00035 <span class="keyword">extern</span> <a class="code" href="../../d1/d25/structtio__param__rec.html">tio_param_rec</a> *<a class="code" href="../../df/d66/tioinit_8h_a172872a640496f029ceadc1ea3031aba.html#a172872a640496f029ceadc1ea3031aba" title="Внутренее представление запрошенных программой параметров.">Tio_params</a>;
+<a name="l00037"></a>00037 <span class="keyword">extern</span> <span class="keywordtype">size_t</span>         <a class="code" href="../../df/d66/tioinit_8h_aaa28559351168f7e52b582f4ff090600.html#aaa28559351168f7e52b582f4ff090600" title="Количсетво запрошенных программой параметров.">Tio_params_sz</a>;
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 
+<a name="l00044"></a><a class="code" href="../../d4/dbb/structtio__lib__state.html">00044</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>_tio_lib_state
+<a name="l00045"></a>00045 {
+<a name="l00046"></a><a class="code" href="../../d4/dbb/structtio__lib__state_a2910ac474be8b5360367d384816a391e.html#a2910ac474be8b5360367d384816a391e">00046</a>   <span class="keywordtype">char</span>* key;                    
+<a name="l00047"></a><a class="code" href="../../d4/dbb/structtio__lib__state_ae9bc9f72e0ecab266f04615ddabb7a63.html#ae9bc9f72e0ecab266f04615ddabb7a63">00047</a>   <span class="keywordtype">int</span> <span class="keyword">set</span>;                      
+<a name="l00048"></a><a class="code" href="../../d4/dbb/structtio__lib__state_a8e99e58bde40e656d3ea5adc8b099e9a.html#a8e99e58bde40e656d3ea5adc8b099e9a">00048</a>   <a class="code" href="../../d5/d48/tio_8h_ac6543eddd34245f558bfdf48706f42d6.html#ac6543eddd34245f558bfdf48706f42d6">tio_status</a> status;            
+<a name="l00050"></a><a class="code" href="../../d4/dbb/structtio__lib__state_a8aae601eb906adef714f742098216f60.html#a8aae601eb906adef714f742098216f60">00050</a>   <span class="keywordtype">void</span>* value;                  
+<a name="l00052"></a>00052 } <a class="code" href="../../d4/dbb/structtio__lib__state.html">tio_lib_state</a>;
+<a name="l00053"></a>00053 
+<a name="l00055"></a>00055 <span class="keyword">extern</span> <a class="code" href="../../d4/dbb/structtio__lib__state.html">tio_lib_state</a> <a class="code" href="../../df/d66/tioinit_8h_a9a7b54ab056a87fb6178a1857af45849.html#a9a7b54ab056a87fb6178a1857af45849" title="Массив содержащий внутреннее состояние библиотеки.">tio_self_state</a>[];
+<a name="l00056"></a>00056   
+<a name="l00057"></a>00057 
+<a name="l00066"></a><a class="code" href="../../d7/dec/structtio__key__string.html">00066</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>_tio_key_string
+<a name="l00067"></a>00067 {
+<a name="l00068"></a><a class="code" href="../../d7/dec/structtio__key__string_a3a8342ae58f9344555bf2715ecdee38d.html#a3a8342ae58f9344555bf2715ecdee38d">00068</a>   <span class="keywordtype">char</span> symb;                    
+<a name="l00071"></a><a class="code" href="../../d7/dec/structtio__key__string_ac975c8da5edc3e5bfa74373a2d643358.html#ac975c8da5edc3e5bfa74373a2d643358">00071</a>   <span class="keywordtype">char</span> *str;                    
+<a name="l00074"></a><a class="code" href="../../d7/dec/structtio__key__string_adc0208633aac3dcd4bfa96220302fd6b.html#adc0208633aac3dcd4bfa96220302fd6b">00074</a>   <a class="code" href="../../d1/d25/structtio__param__rec.html">tio_param_rec</a> *per;           
+<a name="l00076"></a>00076 } <a class="code" href="../../d7/dec/structtio__key__string.html">tio_key_string</a>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 
+<a name="l00083"></a><a class="code" href="../../d1/d74/structtio__simple__chain.html">00083</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>_tio_simple_chain
+<a name="l00084"></a>00084 {
+<a name="l00085"></a><a class="code" href="../../d1/d74/structtio__simple__chain_a6e3d08c6df6586fe266ca0172ff81486.html#a6e3d08c6df6586fe266ca0172ff81486">00085</a>   <span class="keywordtype">char</span>* val;                    
+<a name="l00086"></a><a class="code" href="../../d1/d74/structtio__simple__chain_a9a6dc82f519128098da43dfc7b5d9404.html#a9a6dc82f519128098da43dfc7b5d9404">00086</a>   <span class="keyword">struct </span>_tio_simple_chain *next; 
+<a name="l00087"></a>00087 } <a class="code" href="../../d1/d74/structtio__simple__chain.html">tio_simple_chain</a>;
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089     
+<a name="l00090"></a>00090 <span class="comment">/*</span>
+<a name="l00091"></a>00091 <span class="comment"> * Фукция вывода на экран сообщения помощи по программе.</span>
+<a name="l00092"></a>00092 <span class="comment"> *</span>
+<a name="l00093"></a>00093 <span class="comment"> * @param help_msg  Краткое описание программы.</span>
+<a name="l00094"></a>00094 <span class="comment"> * @param progName  Имя программы</span>
+<a name="l00095"></a>00095 <span class="comment"> * @param params    Структура с ключами и их значениями</span>
+<a name="l00096"></a>00096 <span class="comment"> *</span>
+<a name="l00097"></a>00097 <span class="comment"> * @return 0        При успешном завершении и код ошибки в противном случае</span>
+<a name="l00098"></a>00098 <span class="comment"> */</span>
+<a name="l00099"></a>00099 <span class="keywordtype">int</span> tioHelp( <span class="keyword">const</span> <span class="keywordtype">char</span>* help_msg, <span class="keyword">const</span> <span class="keywordtype">char</span>* progName,
+<a name="l00100"></a>00100              <span class="keyword">const</span> <a class="code" href="../../d1/d25/structtio__param__rec.html">tio_param_rec</a> par[], <span class="keyword">const</span> <span class="keywordtype">size_t</span> sz );
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 
+<a name="l00107"></a>00107 <span class="keywordtype">void</span> <a class="code" href="../../df/d66/tioinit_8h_add9a422a828816917df8706a5232c19f.html#add9a422a828816917df8706a5232c19f">tioFree</a>();
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 <span class="preprocessor">#endif //_TIOINIT_H</span>
+</pre></div></div>
+</div>
+<hr class="footer"/><address class="footer"><small>Документация по libtio. Последние изменения: Mon Oct 1 2012 14:21:13. Создано системой&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>
