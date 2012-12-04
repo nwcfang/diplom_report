@@ -50,7 +50,7 @@ int main( int argc, const char* argv[] ) {
     tioInit( "alpha", "This is test", mypar, argc, argv );
 
     quad( tioGetL( "A" ),tioGetL( "B" ),tioGetL( "C" ), Roots );
-    void *td = tioTableBegin( "Name&Valume", TIOSTRING, TIOLONG );
+    void *td = tioTableBegin( "Name&Value", TIOSTRING, TIOLONG );
 
     tioTableRecord( td, "Argument A", tioGetL( "A" ) );
     tioTableRecord( td, "Argument B", tioGetL( "B" ) );
