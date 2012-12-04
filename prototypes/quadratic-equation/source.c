@@ -45,9 +45,9 @@ int main( int argc, const char* argv[] ) {
         {NULL, NULL, NULL}
     };
 
-    puts( "Тест написал: Гусев Михаил" );
-    puts( "Короткое описание теста:\nТестирование функции решения квадратного уровнения." );
-    tioInit( "alpha", "This is test", mypar, argc, argv );
+    //puts( "Тест написал: Гусев Михаил" );
+    //puts( "Короткое описание теста:\nТестирование функции решения квадратного уровнения." );
+    tioInit( "v0.9 alpha", "This is test", mypar, argc, argv );
 
     quad( tioGetL( "A" ),tioGetL( "B" ),tioGetL( "C" ), Roots );
     void *td = tioTableBegin( "Name&Value", TIOSTRING, TIOLONG );
