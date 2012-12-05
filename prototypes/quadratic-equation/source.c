@@ -50,17 +50,17 @@ int main( int argc, const char* argv[] ) {
     tioInit( "v0.9 alpha", "This is test", mypar, argc, argv );
 
     quad( tioGetL( "A" ),tioGetL( "B" ),tioGetL( "C" ), Roots );
-    void *td = tioTableBegin( "Name&Value", TIOSTRING, TIOLONG );
+    void *td = tioTableBegin( "Имя параметра&Значение", TIOSTRING, TIOLONG );
 
-    tioTableRecord( td, "Argument A", tioGetL( "A" ) );
-    tioTableRecord( td, "Argument B", tioGetL( "B" ) );
-    tioTableRecord( td, "Argument C", tioGetL( "C" ) );
+    tioTableRecord( td, "Аргумент A", tioGetL( "A" ) );
+    tioTableRecord( td, "Аргумент B", tioGetL( "B" ) );
+    tioTableRecord( td, "Аргумент C", tioGetL( "C" ) );
     /*tioTableRecord( td, "The equation root 1", Roots->root1 );*/
     /*tioTableRecord( td, "The equation root 2", Roots->root2 );*/
     tioTableEnd( td );
 
     puts( "Сравнение эталонных и возвращаемых функцией корней" ); 
-    td = tioTableBegin( "Roots etalon&Roots from function", TIOLONG, TIOLONG );
+    td = tioTableBegin( "Эталонные корни&Корни, посчинанные функцией", TIOLONG, TIOLONG );
     tioTableRecord( td, tioGetL( "ROOT1" ), Roots->root1 );
     tioTableRecord( td, tioGetL( "ROOT2" ), Roots->root2 );
     tioTableEnd( td );
