@@ -1,4 +1,6 @@
 all: quadratic-equation
 
 quadratic-equation: source.o
-	$(CC) $(CFLAGS)  -o quadratic-equation source.o -ltio -lm
+	gcc -ggdb  -o quadratic-equation source.o -ltio -lm
+source.o: source.c
+	gcc -ggdb -c source.c -o source.o
