@@ -22,7 +22,7 @@ int quad( long a, long b, long c, SRoots* Roots ) {
 
 int main( int argc, const char* argv[] ) {
     SRoots *Roots = malloc( sizeof(SRoots) ); 
-    SRoots *RootsEtalon = malloc( sizeof(SRoots) ); 
+    //SRoots *RootsEtalon = malloc( sizeof(SRoots) ); 
     
     //int myargc = 6;
 
@@ -65,8 +65,8 @@ int main( int argc, const char* argv[] ) {
     tioTableRecord( td, tioGetL( "ROOT2" ), Roots->root2 );
     tioTableEnd( td );
 
-    tioFinish( 0 );
     free(Roots);
+    tioFinish( 0 );
     return 0;
     
 }
