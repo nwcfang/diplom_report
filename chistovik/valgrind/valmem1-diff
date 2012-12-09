@@ -1,0 +1,50 @@
+diff --git a/prototypes/quadratic-equation/source.c b/prototypes/quadratic-equation/source.c
+index 14b83a7..a0aa898 100644
+--- a/prototypes/quadratic-equation/source.c
++++ b/prototypes/quadratic-equation/source.c
+@@ -22,7 +22,7 @@ int quad( long a, long b, long c, SRoots* Roots ) {
+ 
+ int main( int argc, const char* argv[] ) {
+     SRoots *Roots = malloc( sizeof(SRoots) ); 
+-    SRoots *RootsEtalon = malloc( sizeof(SRoots) ); 
++    //SRoots *RootsEtalon = malloc( sizeof(SRoots) ); 
+     
+     //int myargc = 6;
+ 
+@@ -65,8 +65,8 @@ int main( int argc, const char* argv[] ) {
+     tioTableRecord( td, tioGetL( "ROOT2" ), Roots->root2 );
+     tioTableEnd( td );
+ 
+-    tioFinish( 0 );
+     free(Roots);
++    tioFinish( 0 );
+     return 0;
+     
+ }
+
+diff --git a/src/tioTableBegin.c b/src/tioTableBegin.c
+index 030406d..422cf06 100644
+--- a/src/tioTableBegin.c
++++ b/src/tioTableBegin.c
+@@ -459,8 +459,11 @@ int tabRow( void **strings, int *bufType, int countColum, int lenColCon )
+             }
+             /*Insert spaces*/
+             for(extraCounter = colStr[i] + 1; extraCounter < (max + 1); ++ extraCounter )
++            {
+                 for( offset = 0; offset < (lenColCon - 1); ++ offset )
+                     data[i][extraCounter][offset] = ' ';
++                data[i][extraCounter][offset] = '\0';
++            }
+             break;
+         default:
+             printf("ERROR!");
+@@ -481,7 +484,7 @@ int tabRow( void **strings, int *bufType, int countColum, int lenColCon )
+     /*FREE */
+     for( i = 0; i < countColum; ++ i )
+     {
+-        for( j = 0; j < colStr[i]; ++ j )
++        for( j = 0; j <= colStr[i]; ++ j )
+         {
+             free(data[i][j]);
+         }
+
