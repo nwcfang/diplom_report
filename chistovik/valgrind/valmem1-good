@@ -1,3 +1,5 @@
+nwcfang@nwcfang-Z68AP-D3:~/current_task/prototypes/quadratic-equation$ valgrind --tool=memcheck --leak-check=full 
+--show-reachable=yes --track-origins=yes ./quadratic-equation -a 1 -b 2 -c -3 --root1=1 --root2=-3
 ==4116== Memcheck, a memory error detector
 ==4116== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
 ==4116== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
