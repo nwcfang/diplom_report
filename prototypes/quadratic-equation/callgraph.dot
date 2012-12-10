@@ -1,0 +1,36 @@
+digraph "callgraph" {
+  Fa5b82bc [label="ptmalloc_init\n43 913"];
+  Fa5b90a4 [label="_dl_addr\n43 694"];
+  Fa5c8974 [label="free\n15 254"];
+  Fa5c9844 [label="malloc\n88 859"];
+  Fa5c9fec [label="_int_malloc\n18 022"];
+  Fa5caa9c [label="malloc_hook_ini\n44 724"];
+  Fa5d48cc [label="printf\n13 378"];
+  Fa61677c [label="(below main)\n267 108"];
+  Fa617a6c [label="main\n267 108"];
+  Fa61cbec [label="tioFinish\n29 558"];
+  Fa6227d4 [label="tioInit\n57 599"];
+  Fa6248ac [label="tio_decode_params\n13 913"];
+  Fa68dc5c [label="extractparams\n22 967"];
+  Fa69b0bc [label="0x080485f0\n267 108"];
+  Fa6a2124 [label="tabRow\n52 509"];
+  Fa6a365c [label="tioTableEnd\n81 339"];
+  Fa6a3fbc [label="drawLine\n23 132"];
+  Fa5b82bc -> Fa5b90a4 [weight=2,label="43 694 (1x)"];
+  Fa5c9844 -> Fa5c9fec [weight=2,label="23 022 (177x)"];
+  Fa5c9844 -> Fa5caa9c [weight=2,label="57 133 (1x)"];
+  Fa5caa9c -> Fa5b82bc [weight=2,label="43 913 (1x)"];
+  Fa61677c -> Fa617a6c [weight=2,label="267 108 (1x)"];
+  Fa617a6c -> Fa5c9844 [weight=2,label="69 559 (2x)"];
+  Fa617a6c -> Fa61cbec [weight=2,label="29 558 (1x)"];
+  Fa617a6c -> Fa6227d4 [weight=2,label="57 599 (1x)"];
+  Fa617a6c -> Fa6a365c [weight=2,label="81 339 (2x)"];
+  Fa61cbec -> Fa5c8974 [weight=2,label="15 254 (101x)"];
+  Fa6227d4 -> Fa6248ac [weight=2,label="13 913 (1x)"];
+  Fa6227d4 -> Fa68dc5c [weight=2,label="22 967 (1x)"];
+  Fa68dc5c -> Fa5c9844 [weight=2,label="19 300 (100x)"];
+  Fa69b0bc -> Fa61677c [weight=2,label="267 108 (1x)"];
+  Fa6a2124 -> Fa5d48cc [weight=2,label="13 378 (14x)"];
+  Fa6a365c -> Fa6a2124 [weight=2,label="52 509 (7x)"];
+  Fa6a365c -> Fa6a3fbc [weight=2,label="23 132 (9x)"];
+}
