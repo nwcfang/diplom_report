@@ -1756,11 +1756,11 @@
         <dia:point val="10.0787,46.5"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="9.64464,46.4495;10.3682,54.1118"/>
+        <dia:rectangle val="9.73586,46.4498;10.4595,52.1868"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="10.0787,46.5"/>
-        <dia:point val="10,54"/>
+        <dia:point val="10.1,52.075"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
